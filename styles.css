@@ -1,0 +1,111 @@
+body {
+  font-family: 'Segoe UI', Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background: #f8f9fa;
+  color: #222;
+}
+nav {
+  background: #fff;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.04);
+  padding: 0.5rem 0;
+}
+nav ul {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  margin: 0;
+  padding: 0;
+}
+nav ul li {
+  margin: 0 1.2rem;
+}
+nav ul li a {
+  text-decoration: none;
+  color: #222;
+  font-weight: 500;
+  transition: color 0.2s;
+}
+nav ul li a:hover {
+  color: #0077b6;
+}
+main {
+  max-width: 900px;
+  margin: 2rem auto;
+  padding: 0 1rem;
+}
+.hero {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 60vh;
+}
+.hero-card {
+  background: #fff;
+  border-radius: 18px;
+  box-shadow: 0 4px 24px rgba(0,0,0,0.08);
+  display: flex;
+  align-items: center;
+  padding: 2rem 2.5rem;
+  gap: 2rem;
+}
+.hero-img {
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 3px solid #0077b6;
+  background: #e0e0e0;
+}
+.hero-info h1 {
+  margin: 0 0 0.5rem 0;
+  font-size: 2.2rem;
+}
+.hero-info h2 {
+  margin: 0 0 0.5rem 0;
+  font-size: 1.2rem;
+  color: #0077b6;
+}
+section {
+  background: #fff;
+  border-radius: 12px;
+  box-shadow: 0 2px 12px rgba(0,0,0,0.04);
+  padding: 2rem;
+  margin-bottom: 2rem;
+}
+.projects .project-list {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+.project-item {
+  background: #f1f8ff;
+  border-radius: 8px;
+  padding: 1rem 1.5rem;
+  box-shadow: 0 1px 4px rgba(0,119,182,0.06);
+}
+.gallery-placeholder {
+  text-align: center;
+  color: #888;
+  padding: 2rem 0;
+}
+.contact-list {
+  list-style: none;
+  padding: 0;
+}
+.contact-list li {
+  margin-bottom: 0.7rem;
+}
+@media (max-width: 600px) {
+  .hero-card {
+    flex-direction: column;
+    padding: 1.2rem;
+    gap: 1rem;
+  }
+  main {
+    padding: 0 0.3rem;
+  }
+  section {
+    padding: 1rem;
+  }
+} 
